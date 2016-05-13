@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akrasia - <%- title %></title>
+
+    <meta name="author" content="Sebastian Senf (me@akrasia.me)">
+
+    <% if (current.path[1] === 'index') { %>
+      <meta name="description" content="<%- description %>">
+    <% } else { %>
+      <meta name="description" content="<%- title %>">
+    <% } %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+
+    <link rel="stylesheet" href="/assets/css/tomorrow-night.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/main.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div id="that-one-thing">
+      <%- partial('../_partials/_header') %>
+
+      <section class="section">
+        <div class="container">
+          <% if (current.path[1] === 'index') { %>
+            <%- yield %>
+          <% } else { %>
+            <div id="post">
+              <div class="columns top">
+                <div class="column">
+                  <p>
+                    <%- title %>
+                    <span>
+                      Posted on <%- date %>
+                      in <%- category.substr(0, 1).toUpperCase() + category.substr(1, category.length) %>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <%- yield %>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <%- partial('../_partials/_footer') %>
+    </div>
+
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.smoothState.min.js"></script>
+    <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+  </body>
+</html>

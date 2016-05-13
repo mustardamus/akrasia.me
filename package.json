@@ -1,0 +1,26 @@
+{
+  "name": "akkk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "bulma": "0.0.24",
+    "cash-dom": "^1.2.0",
+    "easyimage": "^2.1.0",
+    "fs-extra": "^0.30.0",
+    "globby": "^4.0.0",
+    "gm": "^1.22.0",
+    "jquery": "^2.2.3",
+    "lodash": "^4.12.0",
+    "lwip": "0.0.8",
+    "photoswipe": "^4.1.1",
+    "smoothstate": "^0.7.2",
+    "yaml-front-matter": "^3.4.0"
+  }
+}

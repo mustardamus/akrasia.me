@@ -1,0 +1,132 @@
+{
+  "static-showdown-hackathon-piffle-game": {
+    "date": "2016-03-03",
+    "title": "I finished first place at the Static Showdown hackathon with a speaking game, here is the code",
+    "category": "projects"
+  },
+  "banned-twitter-auto-follow-application-nodejs": {
+    "date": "2016-02-11",
+    "title": "Banned Twitter Auto-Follow Application in Node.js",
+    "category": "projects"
+  },
+  "lessons-learned-rails-rumble-2014": {
+    "date": "2014-10-27",
+    "title": "Lessons learned at Rails Rumble 2014",
+    "category": "projects"
+  },
+  "back-at-home-in-budapest": {
+    "date": "2014-10-07",
+    "title": "Trip 2014 No7 - Back at home in Budapest",
+    "category": "traveling"
+  },
+  "line-length-break-atom-package": {
+    "date": "2014-09-15",
+    "title": "Line Length Break Atom Editor Package",
+    "category": "projects"
+  },
+  "i-finally-banned-news": {
+    "date": "2014-09-02",
+    "title": "I finally banned 'news'",
+    "category": "personal"
+  },
+  "hostel-hop-pitch-scraps-5": {
+    "date": "2014-07-26",
+    "title": "Hostel Hop Pitch - Scraps No5",
+    "category": "projects"
+  },
+  "break-in-in-belgrade": {
+    "date": "2014-07-25",
+    "title": "Trip 2014 No6 - Break-in in Belgrade",
+    "category": "traveling"
+  },
+  "hostel-hop-pitch-scraps-4": {
+    "date": "2014-07-24",
+    "title": "Hostel Hop Pitch - Scraps No4",
+    "category": "projects"
+  },
+  "big-bold-bucharest": {
+    "date": "2014-07-16",
+    "title": "Trip 2014 No5 - Big bold Bucharest",
+    "category": "traveling"
+  },
+  "hostel-hop-pitch-scraps-3": {
+    "date": "2014-07-15",
+    "title": "Hostel Hop Pitch - Scraps No3",
+    "category": "projects"
+  },
+  "hostel-hop-pitch-scraps-2": {
+    "date": "2014-07-10",
+    "title": "Hostel Hop Pitch - Scraps No2",
+    "category": "projects"
+  },
+  "hostel-hop-pitch-scraps-1": {
+    "date": "2014-07-10",
+    "title": "Hostel Hop Pitch - Scraps No1",
+    "category": "projects"
+  },
+  "back-in-sofia": {
+    "date": "2014-07-05",
+    "title": "Trip 2014 No4 - Back in Sofia",
+    "category": "traveling"
+  },
+  "yet-another-special-day": {
+    "date": "2014-06-30",
+    "title": "Yet another special day",
+    "category": "personal"
+  },
+  "a-taste-of-budapest": {
+    "date": "2014-06-25",
+    "title": "Trip 2014 No3 - A taste of Budapest",
+    "category": "traveling"
+  },
+  "bratislava-dead-on-arrival": {
+    "date": "2014-06-24",
+    "title": "Trip 2014 No2 - Bratislava - Dead on arrival",
+    "category": "traveling"
+  },
+  "a-night-in-prague": {
+    "date": "2014-06-22",
+    "title": "Trip 2014 No1 - A night in Prague",
+    "category": "traveling"
+  },
+  "getting-rid-of-stuff-2nd-phase": {
+    "date": "2014-05-27",
+    "title": "Getting rid of stuff - second phase",
+    "category": "personal"
+  },
+  "new-pairs-website-and-demo": {
+    "date": "2014-05-19",
+    "title": "New pairs.io website and demo",
+    "category": "projects"
+  },
+  "hostel-hop-damn-continuity": {
+    "date": "2014-04-30",
+    "title": "Hostel Hop Day X - Damn continuity",
+    "category": "personal"
+  },
+  "hostel-hop-features-and-wireframes": {
+    "date": "2014-02-21",
+    "title": "Hostel Hop Day 4 - Initial features and wireframes",
+    "category": "projects"
+  },
+  "hostel-hop-development-environment": {
+    "date": "2014-02-20",
+    "title": "Hostel Hop Day 3 - Development Environment",
+    "category": "coding"
+  },
+  "hostel-hop-scraping-and-bootstrapping": {
+    "date": "2014-02-14",
+    "title": "Hostel Hop Day 1 + 2 - Scraping and bootstrapping data",
+    "category": "coding"
+  },
+  "hostel-hop-48-days": {
+    "date": "2014-02-13",
+    "title": "Hostel Hop - 48 days for the real thing",
+    "category": "projects"
+  },
+  "put-yourself-out-there": {
+    "date": "2014-02-06",
+    "title": "Put yourself out there",
+    "category": "personal"
+  }
+}

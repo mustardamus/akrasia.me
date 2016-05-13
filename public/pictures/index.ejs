@@ -1,0 +1,70 @@
+<%
+  var title = "Akrasia - Pictures of my journey"
+  var countries = 0
+  var cities = 0
+  var pictures = 0
+
+  for (var country in public.pictures) {
+    if (country === '_contents' || country === '_data') continue
+
+    countries++
+
+    for (var city in public.pictures[country]) {
+      cities++
+      pictures += public.pictures[country][city]._contents.length
+    }
+  }
+
+  var description = "I traveled to " + cities + " cities in " + countries + " countries and took " + Math.floor(pictures / 2) + " pictures"
+%>
+<div id="pictures">
+  <div class="columns top">
+    <div class="column">
+      <p>
+        <%- description %>
+      </p>
+    </div>
+  </div>
+
+  <%
+    for (var country in public.pictures) {
+      if (country === '_contents' || country === '_data') continue
+
+      for (var city in public.pictures[country]) {
+        %>
+        <div class="section city">
+          <h1><%- city %> <span>/ <%- country %></span></h1>
+
+          <div class="cover">
+            <img src="/pictures/<%- country %>/<%- city %>/<%- public.pictures._data.covers[city] %>">
+          </div>
+
+          <ul class="pictures is-clearfix">
+            <%
+              var count = 0
+
+              for (var thumb of public.pictures[country][city]._contents) {
+                if ( thumb.match(/\b.(jpg|bmp|jpeg|gif|png|tif)\b/gi) && thumb.indexOf('_thumb') !== -1) {
+                  %>
+                  <li data-thumb="/pictures/<%- country %>/<%- city %>/<%- thumb %>">
+                  </li>
+                  <%
+                  count++
+                }
+              }
+            %>
+
+            <% if (count > 5) { %>
+              <li class="more">
+                <a href="#<%- city %>" class="button">
+                  Show <%- count -5 %> more
+                </a>
+              </li>
+            <% } %>
+          </ul>
+        </div>
+        <%
+      }
+    }
+  %>
+</div>

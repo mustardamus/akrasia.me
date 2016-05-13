@@ -1,0 +1,299 @@
+// http://www.colourlovers.com/palette/617935/Dutch_Seas
+
+@import "../../../node_modules/bulma/bulma.sass"
+@import url(https://fonts.googleapis.com/css?family=Neuton:400)
+
+body
+  font-family: 'Neuton', serif
+
+html
+  height: 100%
+  background-color: #222
+  background-image: url('/assets/images/bg.jpg')
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-size: cover
+
+.section
+  background: none
+  padding: 0
+
+#header
+  background: rgba(0, 0, 0, 0.1)
+
+  #logo
+    font-size: 9em
+    color: rgba(255, 255, 255, 0.2)
+    margin-top: -28px
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1)
+    position: relative
+
+    .slogan
+      position: absolute
+      bottom: 0
+      left: 0
+      padding-left: 24px
+      font-size: 0.14em
+      color: white
+
+  .header-menu
+    .header-item
+      a
+        color: white
+        font-size: 1.4em
+        border-bottom: 3px solid #1693A5
+        padding: 0 5px 3px 5px
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+
+        &:hover
+          border-bottom: 3px solid #45B5C4
+
+      &.is-active a
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5)
+        cursor: default
+
+#asterisk
+  position: fixed
+  left: 10px
+  bottom: 10px
+  color: rgba(255, 255, 255, 0.6)
+  cursor: default
+
+.columns.top
+  margin-top: 60px
+
+  .column
+    p
+      color: #C7EDE8
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+      font-size: 3em
+      line-height: 45px
+
+      span
+        font-size: 0.4em
+        color: #7ECECA
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+        display: inline-block
+
+.columns.sub
+  margin: 170px 0 0 40px
+
+  .column
+    p
+      color: #C7EDE8
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+      font-size: 1.6em
+      line-height: 26px
+      margin-bottom: 10px
+
+#pictures
+  .top
+    margin-bottom: 70px
+    text-align: center
+
+  .section.city
+    background: white
+    padding: 0
+    margin: 0 0 50px 0
+    border-radius: 3px
+    border: 3px solid rgba(0, 0, 0, 0.1)
+    position: relative
+    min-height: 554px
+
+    h1
+      font-size: 3em
+      color: white
+      position: absolute
+      top: -20px
+      left: -20px
+      background: #1693A5
+      line-height: 40px
+      padding: 10px 30px
+      border-radius: 2px
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+      z-index: 2
+
+      span
+        font-size: 0.4em
+        color: #7ECECA
+        text-shadow: none
+
+    .cover
+      position: absolute
+      top: 0
+      left: 0
+      padding: 20px
+      z-index: 1
+
+      img
+        border-radius: 3px
+
+    .pictures
+      position: relative
+      z-index: 2
+      margin: 380px 0 0 212px
+      background: white
+      padding: 20px
+      border-radius: 3px
+
+      li
+        float: left
+        margin: 0 10px 5px 0
+        display: none
+
+        a
+          margin: 0 auto
+          img
+            border: 2px solid #C7EDE8
+            border-radius: 1px
+
+          &:hover
+            img
+              border: 2px solid #45B5C4
+
+        &.more
+          text-align: center
+          display: inline-block
+          width: 224px
+          padding-top: 50px
+
+          a
+            background: #1693A5
+            border: none
+            font-size: 1.4em
+            color: white
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+            padding: 9px 16px 12px 16px
+
+            &:hover
+              background: #45B5C4
+
+#contact
+  .top
+    margin-bottom: 70px
+    text-align: center
+
+  .syndicate
+    margin: 180px 0 0 70px
+
+    li
+      position: relative
+      font-size: 2.2em
+
+      svg
+        display: inline-block
+        width: 22px
+        height: 22px
+
+      span
+        color: #1693A5
+        display: inline-block
+        min-width: 100px
+
+      a
+        color: #7ECECA
+
+        &:hover
+          color: #45B5C4
+
+  form
+    background: white
+    padding: 20px
+    box-shadow: 0 0 20px black
+    margin-top: 80px
+    border-radius: 3px
+    border: 3px solid rgba(0, 0, 0, 0.1)
+
+    .label
+      font-size: 1.2em
+      font-weight: normal
+      color: #1693A5
+
+    .button
+      display: block
+      width: 100%
+      background: #45B5C4
+
+      &:hover
+        background: #1693A5
+
+#posts
+  .top
+    margin-bottom: 70px
+    text-align: center
+
+  ul
+    margin-bottom: 70px
+
+    li
+      font-size: 2em
+      background: white
+      border: 3px solid rgba(0, 0, 0, 0.1)
+      border-radius: 3px
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7)
+      margin-bottom: 30px
+      position: relative
+      line-height: 26px
+
+      &:first-child
+        font-size: 2.8em
+        line-height: 42px
+
+        .meta
+          top: -36px
+
+      a
+        display: block
+        color: #1693A5
+        padding: 10px 20px
+
+        .meta
+          position: absolute
+          top: -16px
+          right: -16px
+          color: white
+          font-size: 0.6em
+          background: #1693A5
+          border-radius: 2px
+          text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2)
+          padding: 2px 15px
+          text-align: right
+
+          span
+            font-size: 0.9em
+            color: #7ECECA
+            text-shadow: none
+
+        &:hover
+          color: #45B5C4
+
+#post
+  margin-bottom: 70px
+
+  .content
+    background: white
+    border: 3px solid rgba(0, 0, 0, 0.1)
+    border-radius: 3px
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7)
+    margin-top: 70px
+    padding: 50px
+    font-size: 1.4em
+    color: #444
+
+    a
+      color: #45B5C4
+      border-bottom: 2px solid #C7EDE8
+
+      &:hover
+        color: #1693A5
+        border-bottom: 2px solid #A0DED6
+
+    pre
+      padding: 10px
+
+
+      code
+        padding: 10px
+        font-size: 12px
+        line-height: 16px

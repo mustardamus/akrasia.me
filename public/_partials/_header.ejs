@@ -1,0 +1,32 @@
+<header id="header" class="header">
+  <div class="container">
+    <div class="header-left">
+      <a id="logo" class="header-item" href="/">
+        <span class="text">Akrasia</span>
+        <span class="slogan">acting against one's better judgement*</span>
+      </a>
+    </div>
+
+    <!-- Hamburger menu (on mobile) -->
+    <span class="header-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <div class="header-right header-menu">
+      <span class="header-item <%- current.path[0] === 'posts' ? 'is-active' : '' %>">
+        <a href="/posts">Blog</a>
+      </span>
+      <span class="header-item <%- current.path[0] === 'pictures' ? 'is-active' : '' %>">
+        <a href="/pictures" class="not-smooth">Pictures</a>
+      </span>
+      <!--<span class="header-item <%- current.path[0] === 'skills' ? 'is-active' : '' %>">
+        <a href="/skills">Coding Skills</a>
+      </span>-->
+      <span class="header-item <%- current.path[0] === 'contact' ? 'is-active' : '' %>">
+        <a href="/contact">Contact</a>
+      </span>
+    </div>
+  </div>
+</header>

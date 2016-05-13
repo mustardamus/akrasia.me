@@ -1,0 +1,30 @@
+<% var title = "Ramblings about coding, projects, traveling and life" %>
+<% var description = "Ramblings about coding, projects, traveling and life" %>
+
+<div id="posts">
+  <div class="columns top">
+    <div class="column">
+      <p>
+        Ramblings about coding, projects, traveling and life
+      </p>
+    </div>
+  </div>
+
+  <ul>
+    <% for (var slug in public.posts._data) { %>
+      <li>
+        <h1>
+          <a href="/posts/<%- slug %>">
+            <%- public.posts._data[slug].title %>
+
+            <div class="meta">
+              <% var category = public.posts._data[slug].category %>
+              <%- category.substr(0, 1).toUpperCase() + category.substr(1, category.length) %>
+              <span><%- public.posts._data[slug].date %></span>
+            </div>
+          </a>
+        </h1>
+      </li>
+    <% } %>
+  </ul>
+</div>
