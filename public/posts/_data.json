@@ -1,4 +1,9 @@
 {
+  "open-sourcing-node-js-web-remote-control": {
+    "date": "2016-05-30",
+    "title": "Open sourcing my web remote control written in CoffeeScript and Node.js",
+    "category": "projects"
+  },
   "static-showdown-hackathon-piffle-game": {
     "date": "2016-03-03",
     "title": "I finished first place at the Static Showdown hackathon with a speaking game, here is the code",
