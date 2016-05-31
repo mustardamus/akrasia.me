@@ -1,3 +1,8 @@
+var validateEmail = function(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+ return re.test(email)
+}
+
 var contactForm = function() {
   var el = $('#contact form')
   var emailEl = $('input[name="email"]', el)
@@ -5,21 +10,41 @@ var contactForm = function() {
   var buttonEl = $('button', el)
 
   el.on('submit', function(e) {
-    buttonEl.addClass('is-loading')
+    var emailVal = emailEl.val()
+    var messageVal = messageEl.val()
 
-    $.ajax({
-      url: 'https://formspree.io/me@akrasia.me',
-      method: 'POST',
-      dataType: 'json',
-      data: {
-        email: emailEl.val(),
-        message: messageEl.val()
-      },
-      success: function() {
-        buttonEl.removeClass('is-loading')
-        messageEl.val('').focus()
+    if (emailVal.length !== 0 && messageVal.length !== 0 && validateEmail(emailVal)) {
+      buttonEl.addClass('is-loading')
+
+      $.ajax({
+        url: 'https://formspree.io/me@akrasia.me',
+        method: 'POST',
+        dataType: 'json',
+        data: {
+          email: emailVal,
+          message: messageVal
+        },
+        success: function() {
+          buttonEl.removeClass('is-loading')
+          emailEl.removeClass('is-danger')
+          messageEl.removeClass('is-danger')
+          
+          messageEl.val('').focus()
+        }
+      })
+    } else {
+      if (emailVal.length === 0 || !validateEmail(emailVal)) {
+        emailEl.addClass('is-danger')
+      } else {
+        emailEl.removeClass('is-danger')
       }
-    })
+
+      if (messageVal.length === 0) {
+        messageEl.addClass('is-danger')
+      } else {
+        messageEl.removeClass('is-danger')
+      }
+    }
 
     e.preventDefault()
   })
