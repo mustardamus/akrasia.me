@@ -1,4 +1,9 @@
 {
+  "ekso-node-js-module": {
+    "date": "2016-06-05",
+    "title": "Ekso - Node.js Module to require entire directory structures",
+    "category": "projects"
+  },
   "open-sourcing-node-js-web-remote-control": {
     "date": "2016-05-30",
     "title": "Open sourcing my web remote control written in CoffeeScript and Node.js",
